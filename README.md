@@ -5,8 +5,8 @@
 ## Installation
 
 ```bash
-git clone https://github.com/pairprog/nestjs-gpt-action-template.git
-cd nestjs-gpt-action-template
+git clone https://github.com:Leizhenpeng/nestjs-gpts-action-template.git
+cd nestjs-gpts-action-template
 pnpm install
 cp .env.example .env
 ```
@@ -16,6 +16,7 @@ cp .env.example .env
 - In [package.json](./package.json) `> scripts > tunnel` , change `domain_name` with yours
 - In [.env](./.env)
   - Change `BASE_URL` with yours
+  - Set `API_KEY` with yours
   - (_Not required_) Set `SENTRY_DSN` to enable Sentry error reporting
 - In [main.ts](./src/main.ts)
   - Set the `Title` and `Description` of the API
