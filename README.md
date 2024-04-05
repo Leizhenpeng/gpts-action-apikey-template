@@ -1,6 +1,13 @@
-# NestJS GPT Action API Template
+# NestJS GPTs Action API Template
 
-![Social Image with alt text](./docs/social.jpg 'Logo for this boilerplate project to quickly launch a NestJS powered API for ChatGPT actions')
+- **Template Launch**: New template for GPT Actions API creation.
+- **Tech Stack**: Utilizes NestJS, TypeScript, and Zod.
+- **API Specs**: Auto-generation for OpenAI compatibility.
+- **Local Testing**: Integrated tunnel for local environment trials.
+- **Deployment Ready**: Environment variables for easy setup.
+- **API Key Authentication**: Supports API key authorization for secure access.
+- **Documentation**: Includes detailed example and action schema URL.
+- **Quick Setup**: Follow our concise docs for a 5-minute integration.
 
 ## Installation
 
