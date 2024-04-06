@@ -41,6 +41,7 @@ async function bootstrap() {
         .addServer(BASE_URL)
         .setDescription('Allow a GPT to interact with a backend')
         .setVersion('1.0')
+        .addBearerAuth()
         .build();
 
     const document = SwaggerModule.createDocument(app, config);

@@ -1,10 +1,11 @@
 import { Body, Controller, Post } from '@nestjs/common';
-import { ApiBody, ApiOperation } from '@nestjs/swagger';
+import { ApiBearerAuth, ApiBody, ApiOperation } from '@nestjs/swagger';
 import { WikipediaSearchApiDto, WikipediaSearchDto } from './wikipedia.dto.js';
 
 @Controller('wikipedia')
+@ApiBearerAuth()
 export class WikipediaController {
-  constructor() {}
+  constructor() { }
 
   @Post('/wikipedia/search')
   /**
