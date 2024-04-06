@@ -1,13 +1,13 @@
-import {NestFactory} from '@nestjs/core';
-import {FastifyAdapter, NestFastifyApplication} from '@nestjs/platform-fastify';
-import {DocumentBuilder, SwaggerModule} from '@nestjs/swagger';
+import { NestFactory } from '@nestjs/core';
+import { FastifyAdapter, NestFastifyApplication } from '@nestjs/platform-fastify';
+import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 import * as hbs from 'handlebars';
-import {join} from 'path';
-import {AppModule} from './app.module.js';
-import {ConfigService} from '@nestjs/config';
+import { join } from 'path';
+import { AppModule } from './app.module.js';
+import { ConfigService } from '@nestjs/config';
 import chalk from 'chalk';
-import {urlToDirname} from './node.utils.js';
-import {AuthGuard} from './auth.guard.js';
+import { urlToDirname } from './node.utils.js';
+import { AuthGuard } from './auth.guard.js';
 
 
 const __dirname = urlToDirname(import.meta.url);
@@ -51,7 +51,7 @@ async function bootstrap() {
 
     app.useGlobalGuards(new AuthGuard(configService));
 
-    await app.listen(3000, host);
+    await app.listen(process.env.PORT || 3000, host);
     console.log(
         chalk.bold('Your actions\' config is available at  ') +
         chalk.bold.bgBlue(BASE_URL + '/docs-json'),
