@@ -6,7 +6,7 @@
 - **Tech Stack**: NestJS, TypeScript, and Zod.
 - **Local Testing**: Integrated tunnel for local environment trials.
 
-## Installation
+### Installation
 ```bash
 git clone https://github.com:Leizhenpeng/gpts-action-apikey-template.git
 cd gpts-action-apikey-template
