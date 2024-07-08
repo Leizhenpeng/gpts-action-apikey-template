@@ -45,7 +45,7 @@ async function bootstrap() {
         .build();
 
     const document = SwaggerModule.createDocument(app, config);
-    SwaggerModule.setup('docs', app, document);
+    SwaggerModule.setup('docs', app, { ...document, openapi: '3.1.0' });
 
     const host =
         configService.get('ENV') === 'production' ? '0.0.0.0' : '127.0.0.1';
