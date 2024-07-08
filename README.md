@@ -3,7 +3,7 @@
 
 - **Template Launch**: New template for GPT Actions API creation.
 - **API Key Authentication**: Supports API key authorization for secure access.
-- **Tech Stack**: NestJS, TypeScript, and Zod.
+- **Tech Stack**: NestJS, TypeScript, Zod, And Vercel
 - **Local Testing**: Integrated tunnel for local environment trials.
 
 ### Installation
@@ -11,18 +11,20 @@
 git clone https://github.com:Leizhenpeng/gpts-action-apikey-template.git
 cd gpts-action-apikey-template
 
+# dev
 pnpm install
-pnpm run cpolar # tunnel local
-
+pnpm run cpolar # tunnel local port
 cp .env.example .env
+pnpm run dev
 
-pnpm run start:dev
+# production
+vercel 
 ```
 
 ### Configure
 
 **In [.env](./.env)** File
-  - Change `BASE_URL` with yours
+  - Change `BASE_URL` with yours 
   - Set `API_KEY` with yours
   - (_Not required_) Set `SENTRY_DSN` to enable Sentry error reporting
     
