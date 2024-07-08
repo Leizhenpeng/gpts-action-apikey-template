@@ -1,4 +1,4 @@
-# NestJS GPTs Action API Template
+#  GPTs Action API Template By NestJs
 
 - **Template Launch**: New template for GPT Actions API creation.
 - **Tech Stack**: Utilizes NestJS, TypeScript, and Zod.
