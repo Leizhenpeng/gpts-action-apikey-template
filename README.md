@@ -1,7 +1,6 @@
 # NestJS GPTs Action API Template
-
-- **Template Launch**: New template for GPT Actions API creation.
-- **Tech Stack**: Utilizes NestJS, TypeScript, and Zod.
+- **Template Launch**: New template for GPT Actions API creation .
+- **Tech Stack**: NestJS, TypeScript, and Zod.
 - **API Specs**: Auto-generation for OpenAI compatibility.
 - **Local Testing**: Integrated tunnel for local environment trials.
 - **Deployment Ready**: Environment variables for easy setup.
@@ -9,18 +8,19 @@
 - **Documentation**: Includes detailed example and action schema URL.
 - **Quick Setup**: Follow our concise docs for a 5-minute integration.
 
-## Installation
-
+## Installation¬
 ```bash
-git clone https://github.com:Leizhenpeng/nestjs-gpts-action-template.git
-cd nestjs-gpts-action-template
+git clone https://github.com:Leizhenpeng/gpts-action-apikey-template.git
+cd gpts-action-apikey-template
+
 pnpm install
+pnpm run cpolar # tunnel local
+
 cp .env.example .env
 ```
 
 ## Configure
 
-- In [package.json](./package.json) `> scripts > tunnel` , change `domain_name` with yours
 - In [.env](./.env)
   - Change `BASE_URL` with yours
   - Set `API_KEY` with yours
@@ -29,10 +29,6 @@ cp .env.example .env
   - Set the `Title` and `Description` of the API
 
 ## Run Locally
-
-```bash
-pnpm run tunnel
-```
 
 And in another terminal window
 
@@ -54,9 +50,7 @@ pnpm run start:debug
 
 - Look at [wikipedia.controller.ts](./src/wikipedia/wikipedia.controller.ts) and [wikipedia.dto.ts](./src/wikipedia/wikipedia.dto.ts) to see how to add a new action
 
-## Other
-
-### OpenAI specific headers
+## Process OpenAI Headers
 
 OpenAI provides identifying information with each query. You can access them in routes using the [ChatGptHeaders](./src/chat-gpt/chat-gpt.dto.ts) decorator
 

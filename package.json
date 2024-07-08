@@ -7,10 +7,11 @@
   "private": true,
   "license": "Apache-2.0",
   "scripts": {
+    "dev": "npm run start:dev",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
-    "tunnel": "lt --port 3000 --subdomain domain_name",
+    "cpolar": "cpolar http 3003",
     "supabase:gen": "supabase gen types typescript --project-id \"otllrpsxkorgspodcjan\" --schema public > src/supabase/supabase.types.ts",
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
